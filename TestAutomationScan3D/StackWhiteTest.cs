@@ -47,7 +47,6 @@ namespace TestAutomationScan3D
             CloudCompare("close");
             //var buttonFile = mainWindow.Get<Button>(SearchCriteria.ByText("Camera settings"));
             //buttonFile.Click();
-            //test git teste
         }
     }
 }
