@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Diagnostics;
+using System.Threading;
 using TestStack.White;
 using TestStack.White.UIItems;
 using TestStack.White.UIItems.Finders;
@@ -41,6 +42,9 @@ namespace TestAutomationScan3D
         public void ClickCamera()
         {
             CloudCompare("open");
+            //Aguardar 5 segundos
+            Thread.Sleep(5000);
+            CloudCompare("close");
             //var buttonFile = mainWindow.Get<Button>(SearchCriteria.ByText("Camera settings"));
             //buttonFile.Click();
 
